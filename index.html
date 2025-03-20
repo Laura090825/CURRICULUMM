@@ -29,20 +29,24 @@
       padding-left: 29px;
     }
 
-    .container1 {
-      background-color: rgb(213, 129, 2);
-      color: #fff;
-      align-items: flex-start;
-      width: 35%;
-    
-    }
-
-  .container2 {
-    max-width: 95%; /* Ajusta el ancho al 95% del contenedor */
-    margin: 0 auto; /* Centra el contenedor automáticamente */
-    padding: 10px; /* Da espacio interno para separar el texto de los bordes */
-    box-sizing: border-box; /* Asegura que padding y border estén dentro del ancho total */
+.container1 {
+    background-color: rgb(213, 129, 2);
+    color: #fff;
+    align-items: flex-start;
+    width: 35%;
+    padding: 20px 20px; /* Mantiene el estilo original */
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho */
 }
+
+.container2 {
+    flex-grow: 1;
+    line-height: 1.2;
+    width: 65%;
+    margin: 5px auto; /* Centra el contenido horizontalmente */
+    padding: 10px 30px; /* Añade espaciado interno para separar el texto */
+    box-sizing: border-box; /* Asegura que el padding no desborde el contenedor */
+}
+
    .container2 {  padding-right: 20px; /* Espaciado interno a la derecha */
     padding-left: 20px; /* Opcional: también a la izquierda para balancear */
 }
@@ -147,11 +151,14 @@
     font-size: 18px; /* Reduce ligeramente el tamaño en pantallas pequeñas */
     margin-bottom: 15px; /* Ajusta el espacio entre h2 */
   }
+      
+    .container1, .container2 {
+        width: 100%; /* Ambos contenedores ocuparán toda la pantalla */
+        padding: 10px 20px; /* Reduce el padding para pantallas pequeñas */
+    }
+
     .container2 {
-        padding-right: 10px; /* Reduce el espacio a la derecha */
-        padding-left: 10px; /* Reduce el espacio a la izquierda */
-        margin-right: auto; /* Asegura que no quede espacio adicional */
-        margin-left: auto; /* Centra el contenedor en pantallas pequeñas */
+        margin-right: 0; /* Quita cualquier margen a la derecha */
     }
 }
 

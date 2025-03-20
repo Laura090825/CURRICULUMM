@@ -69,11 +69,12 @@
       border-color: orange;
     }
     
-    h2 {
-      margin-bottom: 0;
-      color: orange;
-   
-    }
+   h2 {
+  margin-bottom: 20px; /* Separa los h2 entre sí */
+  color: orange; /* Mantiene el color */
+  text-align: left; /* Alinea los h2 a la izquierda */
+}
+
     li{
     margin :10px;
     line-height: 0.9;
@@ -136,15 +137,15 @@
       .h2{
         margin:20px;}
         
-      
-      .container1, .container2 {
-        width: 100%;
-        max-width: none;
-        padding: 0; /* Reducir el padding en móvil */
-        padding-left: 50px; /* o la cantidad de espacio que desees */
-        padding-right: 20px;
-      }
+  .container1 h2,
+  .container2 h2 {
+    margin-left: 20px; /* Separa más los h2 hacia la izquierda */
+    font-size: 18px; /* Reduce ligeramente el tamaño en pantallas pequeñas */
+    margin-bottom: 15px; /* Ajusta el espacio entre h2 */
+  }
 
+  .container2 {
+    padding: 15px; /* Reduce el padding en pantallas pequeñas */
       .imagen{
         align-content: center;
       }

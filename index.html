@@ -13,14 +13,14 @@
       padding: 0;
     }
     
-    .container {
-      display: flex;
-      gap: 0;
-      margin: 0;
-      padding: 0px;
-      max-width: 1000px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+ .container {
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 0 20px; /* Espacio interno */
+    box-sizing: border-box;
+}
+
 
     .container1, .container2 {
       display: flex;
@@ -37,13 +37,17 @@
     
     }
 
-    .container2 {
-      flex-grow: 1;
-      line-height: 1.2;
-      width: 65%;
-      margin: 5px;
-      right: 0;
-    }
+  .container2 {
+    max-width: 95%; /* Ajusta el ancho al 95% del contenedor */
+    margin: 0 auto; /* Centra el contenedor automáticamente */
+    padding: 10px; /* Da espacio interno para separar el texto de los bordes */
+    box-sizing: border-box; /* Asegura que padding y border estén dentro del ancho total */
+}
+   .container2 {  padding-right: 20px; /* Espaciado interno a la derecha */
+    padding-left: 20px; /* Opcional: también a la izquierda para balancear */
+}
+    
+
 
     .container1 h2 {
       color: #fff;
@@ -143,9 +147,14 @@
     font-size: 18px; /* Reduce ligeramente el tamaño en pantallas pequeñas */
     margin-bottom: 15px; /* Ajusta el espacio entre h2 */
   }
+    .container2 {
+        padding-right: 10px; /* Reduce el espacio a la derecha */
+        padding-left: 10px; /* Reduce el espacio a la izquierda */
+        margin-right: auto; /* Asegura que no quede espacio adicional */
+        margin-left: auto; /* Centra el contenedor en pantallas pequeñas */
+    }
+}
 
-  .container2 {
-    padding: 15px; /* Reduce el padding en pantallas pequeñas */
       .imagen{
         align-content: center;
       }
